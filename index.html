@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codelândia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="descricao">
+      <p class="codelancia">Codelância</p>
+      <p class="blog">blog</p>
+    </div>
+    <div class="barra-pesquisa">
+      <img class="pesquisa" src="img/lupa.svg" alt="Lupa para a barra de pesquisa" >
+      <input class="barra" type="text" placeholder="Pesquisar no blog">
+    </div>
+  </header>
+
+  <main class="posts">
+    <section class="container">
+      <div class="cabecalho-container">
+        <p class="cabecalho-data">02 de jul, 2021</p>
+        <img class="cabecalho-favoritar" src="img/heart.svg" alt="Favoritar clicando no coração">
+      </div>
+      <h2 class="titulo">Agora é oficial: o Windows 11 está vindo</h2>
+      <p class="conteudo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.</p>
+    </section>
+
+    <section class="container">
+      <div class="cabecalho-container">
+        <p class="cabecalho-data">02 de jul, 2021</p>
+        <img class="cabecalho-favoritar" src="img/heart.svg" alt="Favoritar clicando no coração">
+      </div>
+      <h2 class="titulo">Tim Berners-Lee vai leiloar código-fonte da web</h2>
+      <p class="conteudo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Praesent et auctor justo. Vestibulum nisl orci, lacinia venenatis leo sit amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus et, interdum ullamcorper libero.</p>
+    </section>
+
+    <section class="container">
+      <div class="cabecalho-container">
+        <p class="cabecalho-data">02 de jul, 2021</p>
+        <img class="cabecalho-favoritar" src="img/heart.svg" alt="Favoritar clicando no coração">
+      </div>
+      <h2 class="titulo">Tem Firefox novo no pedaço e você vai querer migrar</h2>
+      <p class="conteudo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est.</p>
+    </section>
+
+    <section class="container">
+      <div class="cabecalho-container">
+        <p class="cabecalho-data">02 de jul, 2021</p>
+        <img class="cabecalho-favoritar" src="img/heart.svg" alt="Favoritar clicando no coração">
+      </div>
+      <h2 class="titulo">John McAfee, criador do antivírus McAfee, morre</h2>
+      <p class="conteudo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Praesent et auctor justo. Vestibulum nisl orci, lacinia venenatis leo sit amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus et, interdum ullamcorper libero.</p>
+    </section>
+    
+  </main>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    const sr = ScrollReveal({
+        origin: 'top',
+        distance: '50px',
+        duration: 2000,
+        reset: true
+    });
+
+    ScrollReveal().reveal('.container', { delay: 200 });
+    ScrollReveal().reveal('.cabecalho-data', { delay: 400 });
+    ScrollReveal().reveal('.titulo', { delay: 500 });
+    ScrollReveal().reveal('.conteudo', { delay: 600 });
+  </script>
+
+</body>
+</html>
